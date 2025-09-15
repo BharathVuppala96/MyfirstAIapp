@@ -20,7 +20,7 @@ response = tweet_chain.invoke({"number": 3, "topic":"India"})
 
 import streamlit as st
 
-st.header("Tweet Generator")
+st.header(" Bharath Tweet Generator")
 
 st.subheader("Generate tweets using GEnAI ")
 
@@ -31,3 +31,4 @@ number=st.number_input("Number of tweets", min_value=1, max_value=10, value=1, s
 if st.button("generate"):
     tweets=tweet_chain.invoke({"number": number, "topic":topic})
     st.write(tweets.content)
+
